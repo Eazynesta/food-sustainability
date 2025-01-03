@@ -19,8 +19,20 @@ header {
 }
 
 header .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+header .logo img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
 }
 
 header nav ul {
@@ -252,13 +264,45 @@ header nav ul li input {
 /* Footer Section */
 footer {
   padding: 20px;
-  background-color: #ff682e;
+  background-color: #333;
   color: white;
   text-align: center;
 }
 
-footer p {
-  margin: 10px 0;
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+footer .footer-container .column {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+footer .footer-container .column h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ff682e;
+}
+
+footer .footer-container .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer .footer-container .social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.3s;
+}
+
+footer .footer-container .social-links a:hover {
+  color: #ff682e;
 }
 
 footer .social-icons {
