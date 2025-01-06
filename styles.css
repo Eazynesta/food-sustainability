@@ -49,17 +49,12 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
   transition: color 0.3s;
 }
 
 header nav ul li a:hover {
   color: #ffe5d6;
-}
-
-header nav ul li input {
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
 }
 
 /* Hero Section */
@@ -69,6 +64,7 @@ header nav ul li input {
   justify-content: space-between;
   padding: 40px;
   background-color: #fff4ec;
+  flex-wrap: wrap;
 }
 
 .hero-content {
@@ -78,7 +74,7 @@ header nav ul li input {
 .hero-content h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #ff682e;
+  color: #023C89;
 }
 
 .hero-content p {
@@ -130,7 +126,7 @@ header nav ul li input {
 }
 
 .about h2 {
-  color: #ff682e;
+  color: #023C89;
   margin-bottom: 20px;
 }
 
@@ -164,7 +160,7 @@ header nav ul li input {
 }
 
 .focus-areas h2 {
-  color: #ff682e;
+  color: #023C89;
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
@@ -192,7 +188,7 @@ header nav ul li input {
 
 .focus-areas .focus-box h3 {
   padding: 10px;
-  color: #ff682e;
+  color: #023C89;
   font-size: 1.1em;
 }
 
@@ -204,7 +200,7 @@ header nav ul li input {
 }
 
 .advocacy h2 {
-  color: #ff682e;
+  color: #023C89;
   margin-bottom: 20px;
 }
 
@@ -235,7 +231,7 @@ header nav ul li input {
 }
 
 .team h2 {
-  color: #ff682e;
+  color: #023C89;
   margin-bottom: 20px;
 }
 
@@ -254,7 +250,7 @@ header nav ul li input {
 
 .team-member h3 {
   margin: 10px 0 5px;
-  color: #ff682e;
+  color: #023C89;
 }
 
 .team-member p {
@@ -264,7 +260,7 @@ header nav ul li input {
 /* Footer Section */
 footer {
   padding: 20px;
-  background-color: #333;
+  background-color: #023C89;
   color: white;
   text-align: center;
 }
@@ -285,7 +281,7 @@ footer .footer-container .column {
 footer .footer-container .column h4 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #ff682e;
+  color: #ffcccb;
 }
 
 footer .footer-container .social-links {
