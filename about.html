@@ -1,68 +1,109 @@
-<!DOCTYPE html>
+/*<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | IFJAD</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>IFJAD - Food Justice and Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+    <!-- Favicon for multiple formats -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon2.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Default favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- Apple devices -->
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="logo.png" alt="IFJAD Logo">
         </div>
+
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="focus-areas.html">Our Focus Areas</a></li>
-                <li><a href="advocacy.html">Our Advocacy Approach</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#home" style="font-weight: bold;">Home</a></li>
+                <li><a href="about.html" style="font-weight: bold;">About Us</a></li>
+                <li><a href="#focus-areas" style="font-weight: bold;">Our Focus Areas</a></li>
+                <li><a href="#jointeam" style="font-weight: bold;">Join Our Team</a></li>
+                <li><a href="#blog" style="font-weight: bold;">Blog</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="about">
-            <h1>About IFJAD</h1>
-            <p>The Institute for Food Justice and Development (IFJAD) is a national non-profit organization dedicated to championing food justice and economic development in Kenya by promoting equitable and sustainable food systems.</p>
-            <p>We focus on tackling systemic barriers to access safe, adequate, nutritious, and culturally relevant food for all, as well as barriers that prevent meaningful and productive participation in food systems by key players, including smallholder farmers, fishers, and food vendors in the informal sector.</p>
-            <p>Our approach combines empowering food systems players by improving knowledge, skills, and practices while simultaneously advocating with policymakers to ensure equity in participation and representation within the food system. By advocating for improved practices and supportive policies, we strive to promote food systems that ensure the delivery of safe, nutritious food while enhancing the economic status of food supply chain workers.</p>
-            <p>Our vision is a Kenya where food justice is a reality, and every citizen has equitable access to healthy, culturally significant food and the opportunity to thrive in a resilient and sustainable food system.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Championing Food Justice and Development in Kenya</h1>
+            <p>Promoting equitable and sustainable food systems while advocating for economic justice for smallholder farmers, fishers, and food vendors in Kenya.</p>
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('about')">Learn More</button>
+                <button onclick="scrollToSection('contact')">Contact Us</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="mainbg.jpg" alt="Farmer in Kenya">
+        </div>
+    </section>
 
-            <h2>Mission</h2>
-            <p>To champion fair and equitable food systems and promote economic development for smallholder farmers, fishers, and food vendors in Kenya's informal sector.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 style="color: #023C89;">About IFJAD</h2>
+        <p>We are a national non-profit organization dedicated to tackling systemic barriers to food access and ensuring fair participation in food systems. Our vision is a Kenya where food justice is a reality for all.</p>
+        <button onclick="window.location.href='about.html'">About Us</button>
+    </section>
 
-            <h2>Vision</h2>
-            <p>To be a leading force for driving transformative change toward inclusive, sustainable, fair, and rewarding food systems.</p>
-        </section>
+    <!-- Focus Areas Section -->
+    <section class="focus-areas">
+        <h2 style="color: #023C89;">Our Focus Areas</h2>
+        <div class="focus-box">
+            <img src="potatoes.jpg" alt="Nutritious Food">
+            <h3>Access to Nutritious and Culturally Relevant Food</h3>
+        </div>
+        <div class="focus-box">
+            <img src="cultural.jpg" alt="Cultural Preservation">
+            <h3>Cultural Preservation and Food Sovereignty</h3>
+        </div>
+        <div class="focus-box">
+            <img src="labor.jpg" alt="Economic Justice">
+            <h3>Economic Justice and Fair Labor Practices</h3>
+        </div>
+        <div class="focus-box">
+            <img src="participation.jpg" alt="Equity">
+            <h3>Equity in Participation and Representation</h3>
+        </div>
+        <div class="focus-box">
+            <img src="foodsys.jpg" alt="Sustainability">
+            <h3>Sustainable and Resilient Food Systems</h3>
+        </div>
+    </section>
 
-        <section class="focus-areas">
-            <h2>Our Focus Areas</h2>
-            <ul>
-                <li>Access to Nutritious and Culturally Relevant Food</li>
-                <li>Cultural Preservation and Food Sovereignty</li>
-                <li>Economic Justice and Fair Labor Practices</li>
-                <li>Equity in Participation and Representation</li>
-                <li>Sustainable and Resilient Food Systems</li>
-            </ul>
-        </section>
+    <!-- Advocacy Approach Section -->
+    <section id="advocacy" class="advocacy">
+        <h2 style="color: #023C89;">Our Advocacy Approach</h2>
+        <p>We focus on capacity building, rights-based advocacy, grassroots mobilization, and policy reform to champion food justice and development in Kenya.</p>
+        <button onclick="window.location.href='advocacy.html'">Explore Advocacy</button>
+    </section>
 
-        <section class="advocacy">
-            <h2>Our Advocacy Approach</h2>
-            <ul>
-                <li>Capacity Building and Empowerment</li>
-                <li>Rights-Based and Legal Advocacy</li>
-                <li>Grassroots Mobilization</li>
-                <li>Education and Public Awareness</li>
-                <li>Strategic Partnerships and Alliances</li>
-                <li>Research and Data-Driven Advocacy</li>
-                <li>Policy Advocacy and Reform</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <h2 style="color: #023C89;">Meet Our Team</h2>
+        <div class="team-member">
+            <img src="ck1.png" alt="Crispus Kinyua">
+            <h3>Crispus Kinyua</h3>
+            <p>Team Leader</p>
+            <p>Contact: crispus@ifjad.org</p>
+        </div>
+        <div class="team-member">
+            <img src="members.jpg" alt="Team Member">
+            <h3>Our Members</h3>
+            <p>IFJAD TEAM</p>
+            <p>Contact: crispus@ifjad.org</p>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Footer Section -->
+    <footer style="background-color: #023C89; color: white;">
         <div class="footer-container">
             <div class="column">
                 <h4>Contact Us</h4>
@@ -71,18 +112,18 @@
             <div class="column">
                 <h4>Quick Links</h4>
                 <p>
-                    <a href="index.html">Home</a><br>
-                    <a href="#">About Us</a><br>
-                    <a href="focus-areas.html">Our Focus Areas</a><br>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="#home" style="color: white;">Home</a><br>
+                    <a href="about.html" style="color: white;">About Us</a><br>
+                    <a href="#focus-areas" style="color: white;">Our Focus Areas</a><br>
+                    <a href="#contact" style="color: white;">Contact Us</a>
                 </p>
             </div>
             <div class="column">
                 <h4>Stay Connected</h4>
                 <p>
-                    <a href="https://www.linkedin.com/company/institute-for-food-justiceand-development/">LinkedIn</a><br>
-                    <a href="https://www.facebook.com/profile.php?id=61568191018234">Facebook</a><br>
-                    <a href="https://x.com/ifjadkenya">X</a>
+                    <a href="https://www.linkedin.com/company/institute-for-food-justiceand-development/" style="color: white;">LinkedIn</a><br>
+                    <a href="https://www.facebook.com/profile.php?id=61568191018234" style="color: white;">Facebook</a><br>
+                    <a href="https://x.com/ifjadkenya" style="color: white;">X</a>
                 </p>
             </div>
         </div>
